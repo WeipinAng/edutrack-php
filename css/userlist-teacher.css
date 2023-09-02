@@ -1,0 +1,182 @@
+.heading-primary {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.heading-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.search-box {
+    width: 40%;
+    position: relative;
+}
+
+.search-box #search-input {
+    width: 100%;
+    font-family: inherit;
+    color: #006266;
+    padding: 0.7rem 2rem 0.7rem 4rem;
+    box-shadow: 0 0.3rem 0.5rem #e2e8f0;
+    outline: none;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+    font-size: 1.7rem;
+}
+
+.search-box #search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem #dbeafe;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------- MODULES READ -------------------- */
+
+.users__list {
+    border-collapse: collapse;
+    font-size: 1.2rem;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+
+    width: 100%;
+}
+
+.users__list thead {
+    background-color: #6c7ae0;
+    color: #fff;
+    text-align: left;
+}
+
+.users__list,
+.users__list th,
+.users__list td {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.teacher__list {
+    font-size: 1.5rem;
+}
+
+.teacher__list,
+.teacher__list th,
+.teacher__list td {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.users__list tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.users__list tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.users__list tbody tr:nth-of-type(even) {
+    background-color: f4f7fa;
+}
+
+.users__list tbody tr:hover {
+    background-color: #ececff;
+}
+
+.modules__operation {
+    padding: 1rem 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.modules__operation:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.update-operation {
+    background-color: #60a3bc;
+}
+
+.update-operation:hover {
+    background-color: #3c6382;
+}
+
+.delete-operation {
+    background-color: #e55039;
+}
+
+.delete-operation:hover {
+    background-color: #eb2f06;
+}
+
+.back-link:link,
+.back-link:visited {
+    color: #006266;
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+.back-link:hover,
+.back-link:active {
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------------------------------- RESPONSIVE TABLE ---------------------------------------- */
+@media only screen and (max-width: 40.625em) {
+    .users__list {
+        border-radius: 0;
+    }
+
+    .users__list tr td:nth-child(1),
+    .users__list tr td:nth-child(2),
+    .users__list tr td:nth-child(3),
+    .users__list tr td:nth-child(4) {
+        width: 100%;
+        font-size: inherit;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        gap: 0.5rem;
+    }
+
+    .users__list tbody tr td:first-child {
+        text-align: left;
+        background-color: #6c7ae0;
+    }
+
+    td::before {
+        content: attr(data-cell);
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    html {
+        font-size: 37.5%;
+    }
+}

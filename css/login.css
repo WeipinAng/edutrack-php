@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/index-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #444;
+}
+
+.login-form-box {
+    margin-left: auto;
+    margin-top: 5rem;
+    width: 55%;
+    padding: 6rem 4rem;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.heading-primary {
+    font-size: 3.6rem;
+}
+
+.divider {
+    height: 1rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #7e9680, #79616f);
+    margin: 5rem 0;
+}
+
+.forminput {
+    width: 80%;
+    margin: 4rem auto;
+    position: relative;
+}
+
+.username,
+.password {
+    width: 100%;
+    color: #000000;
+    letter-spacing: 0.5px;
+    padding: 1.5rem 6rem;
+    background-color: #eceef0;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.4);
+}
+
+.button {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+
+input ~ i {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color 0.4s;
+}
+
+input:focus ~ i {
+    color: #0e7490;
+}
+
+.submit,
+.reset {
+    color: #fff;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff;
+    cursor: pointer;
+
+    transition: all 0.4s;
+}
+
+.submit {
+    background-image: linear-gradient(to right, #38adae, #cd295a);
+    margin-right: 4rem;
+}
+
+.reset {
+    background-image: linear-gradient(to right, #5f2c82, #49a09d);
+}
+
+.submit:hover,
+.reset:hover {
+    opacity: 0.9;
+}
+
+.signup-text {
+    font-size: 1.5rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.signup-link:link,
+.signup-link:visited {
+    color: #155e75;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    transition: all 0.5s;
+}
+
+.signup-link:hover,
+.signup-link:active {
+    border-bottom: 1px solid #155e75;
+}

@@ -1,0 +1,121 @@
+.heading-primary {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.course-intake {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.courseresult__table {
+    border-collapse: collapse;
+    font-size: 1.5rem;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+
+    width: 100%;
+}
+
+.courseresult__table thead {
+    background-color: #6c7ae0;
+    color: #fff;
+    text-align: left;
+}
+
+.courseresult__table,
+.courseresult__table th,
+.courseresult__table td {
+    padding: 2rem 0 2rem 3rem;
+}
+
+.courseresult__table tr td:nth-child(1) {
+    width: 10%;
+}
+
+.courseresult__table tr td:nth-child(2) {
+    width: 20%;
+}
+
+.courseresult__table tr td:nth-child(3) {
+    width: 50%;
+}
+
+.courseresult__table tr td:nth-child(4) {
+    width: 20%;
+}
+
+.courseresult__table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.courseresult__table tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.courseresult__table tbody tr:nth-of-type(even) {
+    background-color: f4f7fa;
+}
+
+.courseresult__table tbody tr:hover {
+    background-color: #ececff;
+}
+
+/* ---------------------------------------- RESPONSIVE TABLE ---------------------------------------- */
+@media only screen and (max-width: 40.625em) {
+    .courseresult__table {
+        border-radius: 0;
+    }
+
+    .courseresult__table tr td:nth-child(1),
+    .courseresult__table tr td:nth-child(2),
+    .courseresult__table tr td:nth-child(3),
+    .courseresult__table tr td:nth-child(4) {
+        width: 100%;
+        font-size: inherit;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        gap: 0.5rem;
+    }
+
+    .courseresult__table tbody tr td:first-child {
+        text-align: left;
+        background-color: #6c7ae0;
+    }
+
+    td::before {
+        content: attr(data-cell);
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    html {
+        font-size: 37.5%;
+    }
+}

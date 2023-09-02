@@ -1,0 +1,260 @@
+.heading-primary {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+
+    padding: 1.5rem 0 1.5rem 4.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- MODULES CREATE/UPDATE -------------------- */
+
+.module__form-box {
+    padding: 3rem 4.5rem 4.5rem 4.5rem;
+    margin-bottom: 5rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.module__form-label {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.module__form-box .module-form .form-group {
+    display: flex;
+}
+
+.module__form-box .module-form .form-group .form-row.form-row-1 {
+    width: 40%;
+    margin-right: 3rem;
+}
+.module__form-box .module-form .form-group .form-row.form-row-2 {
+    width: 60%;
+}
+
+input,
+select {
+    border: none;
+    width: 100%;
+    font-size: 1.7rem;
+    font-family: inherit;
+    color: #000000;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem #dbeafe;
+}
+
+.module__form-box .module-form .module-btn {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 20px;
+    background: #eee;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+.module__form-box .module-form .module-btn:hover {
+    background: #ddd;
+}
+
+.heading-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.search-box {
+    width: 40%;
+    position: relative;
+}
+
+.search-box #search-input {
+    color: #006266;
+    border: none;
+    padding: 0.7rem 2rem 0.7rem 4rem;
+    box-shadow: 0 0.3rem 0.5rem #e2e8f0;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------- MODULES READ -------------------- */
+
+.modules__table {
+    border-collapse: collapse;
+    font-size: 1.5rem;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+
+    width: 100%;
+}
+
+.modules__table thead {
+    background-color: #6c7ae0;
+    color: #fff;
+    text-align: left;
+}
+
+.modules__table,
+.modules__table th,
+.modules__table td {
+    padding: 2rem 0 2rem 3rem;
+}
+
+.modules__table tr td:nth-child(1) {
+    width: 5%;
+}
+
+.modules__table tr td:nth-child(2) {
+    width: 15%;
+}
+
+.modules__table tr td:nth-child(3) {
+    width: 38%;
+}
+
+.modules__table tr td:nth-child(4) {
+    width: 25%;
+}
+
+.modules__table tr td:nth-child(5) {
+    width: 17%;
+}
+
+.modules__table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.modules__table tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.modules__table tbody tr:nth-of-type(even) {
+    background-color: f4f7fa;
+}
+
+.modules__table tbody tr:hover {
+    background-color: #ececff;
+}
+
+.modules__operation {
+    padding: 1rem 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.modules__operation:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.update-operation {
+    background-color: #60a3bc;
+}
+
+.update-operation:hover {
+    background-color: #3c6382;
+}
+
+.delete-operation {
+    background-color: #e55039;
+}
+
+.delete-operation:hover {
+    background-color: #eb2f06;
+}
+
+.back-link:link,
+.back-link:visited {
+    color: #006266;
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+.back-link:hover,
+.back-link:active {
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------------------------------- RESPONSIVE TABLE ---------------------------------------- */
+@media only screen and (max-width: 40.625em) {
+    .modules__table {
+        border-radius: 0;
+    }
+
+    .modules__table tr td:nth-child(1),
+    .modules__table tr td:nth-child(2),
+    .modules__table tr td:nth-child(3),
+    .modules__table tr td:nth-child(4) {
+        width: 100%;
+        font-size: inherit;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        gap: 0.5rem;
+    }
+
+    .modules__table tbody tr td:first-child {
+        text-align: left;
+        background-color: #6c7ae0;
+    }
+
+    td::before {
+        content: attr(data-cell);
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    html {
+        font-size: 37.5%;
+    }
+}

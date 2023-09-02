@@ -1,0 +1,112 @@
+.heading-primary {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+
+    padding: 2rem 0 2rem 4.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.profile__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.profile__form-box {
+    padding: 3rem 4.5rem 4.5rem 4.5rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.profile__form-label {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.profile__form-box .update-profile-form .form-group {
+    display: flex;
+}
+
+.profile__form-box .update-profile-form .form-group .form-row.form-row-3 {
+    width: 65%;
+    margin-right: 5rem;
+}
+.profile__form-box .update-profile-form .form-group .form-row.form-row-4 {
+    width: 35%;
+}
+.profile__form-box .update-profile-form .form-group .form-row.form-row-5 {
+    width: 45%;
+    margin-right: 5rem;
+}
+.profile__form-box .update-profile-form .form-group .form-row.form-row-6 {
+    width: 55%;
+}
+
+input,
+select {
+    border: none;
+    width: 100%;
+    font-size: 1.7rem;
+    font-family: inherit;
+    color: #000000;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem #dbeafe;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input:read-only,
+select:disabled {
+    background-color: #eef2ff;
+}
+
+select:disabled {
+    opacity: 1;
+}
+
+.profile__form-box .update-profile-form .updateprofile-btn {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 20px;
+    background: #eee;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+.profile__form-box .update-profile-form .updateprofile-btn:hover {
+    background: #ddd;
+}

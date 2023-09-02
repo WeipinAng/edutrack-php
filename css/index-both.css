@@ -1,0 +1,79 @@
+.heading-primary {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.hero {
+    background: url(../img/dashboard-hero.png);
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.hero__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.hero__date {
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+.hero__info-box {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero__info-box > *,
+.hero__profile {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3rem;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.hero__detail-link:link,
+.hero__detail-link:visited {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+
+    transition: all 0.3s;
+}
+
+.hero__detail-link:hover,
+.hero__detail-link:active {
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+.hero__info-box > * .hero__icon,
+.hero__profile .hero__icon {
+    font-size: 4.5rem;
+    color: #1e1b4b;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hero__info-box > * .hero__icon {
+    right: 12%;
+}
+
+.hero__profile .hero__icon {
+    right: 4%;
+}
